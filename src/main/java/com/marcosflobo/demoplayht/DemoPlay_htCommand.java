@@ -38,9 +38,9 @@ public class DemoPlay_htCommand implements Runnable {
 
         System.out.println("Running!");
         Instant one = Instant.now();
-        String response = pathHtService.get();
+        pathHtService.get();
         Duration later = Duration.between(one, Instant.now());
-        System.out.println(response);
+        System.out.println("end!");
         System.out.println("It took '" + later.toSeconds() + "' seconds to answer");
     }
 }
